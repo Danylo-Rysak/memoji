@@ -3,7 +3,7 @@ const COUNT_DOWN = "COUNT-DOWN";
 const RESET_TIMER = "RESET-TIMER";
 
 const initialState = {
-  timeout: 5,
+  timeout: 60,
   timer: null,
   convertedTimer: {m: "01", s: "00"},
   isTimerStarted: false,
