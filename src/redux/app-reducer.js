@@ -7,8 +7,8 @@ const initialState = {
   timer: null,
   convertedTimer: {m: "01", s: "00"},
   isTimerStarted: false,
-  statusWin: "You are win",
-  statusLoose: "You are loose"
+  statusWin: "You are win!",
+  statusLoose: "You are loose!"
 }
 
 const appReducer = (state = initialState, action) => {

@@ -20,6 +20,8 @@ const Timer = () => {
         setTimeout(() => {
             clearInterval(intervalId)
         }, state.timeout * 1000)
+
+        return intervalId
     }
 
     if (state.timer === null) {
@@ -30,7 +32,7 @@ const Timer = () => {
         <div>
             <Cards isTimerStarted={state.isTimerStarted} startTimer={startTimer}
                    convertedTimer={state.convertedTimer} statusWin={state.statusWin}
-                   statusLoose={state.statusLoose}/>
+                   statusLoose={state.statusLoose} disabledIcons={state.disabledIcons}/>
             {state.convertedTimer && <p className="timer">{state.convertedTimer.m}:{state.convertedTimer.s}</p>}
         </div>
     )
